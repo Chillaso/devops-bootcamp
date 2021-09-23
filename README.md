@@ -27,6 +27,7 @@ You'll find a [java application](devops/src/main/java/com/nttdata/devops/control
     - [ ] Build the docker image
     - [ ] Push docker image to your docker registry
 - [ ] Download the docker image from your docker registry and run into your local machine
+- [ ] Do a request to your microservice
 
 
 
