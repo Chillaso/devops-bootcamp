@@ -1,10 +1,10 @@
-# Github action test
-Exercises to practice CI/CD with github actions
+# Devops bootcamp
+Exercises to practice CI/CD with github actions, testing, containers and some basic concept around devops
 
 ## Setup
 First of all, fork this repository, after that clone into your local machine.
 ```bash
-git clone https://github.com/your-user-name/github-action-test.git
+git clone https://github.com/your-user-name/devops-bootcamp.git
 ```
 
 You'll find a [java application](devops/src/main/java/com/nttdata/devops/controller/NumberController.java) that exponse a REST API which divides two numbers passed as parameters. Also, you'll find an example of a github action file in [here](examples/ci.yml), take a look before starting.
