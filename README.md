@@ -29,6 +29,9 @@ You'll find a [java application](devops/src/main/java/com/nttdata/devops/control
     - [ ] Push docker image to your docker registry
 - [ ] Download the docker image from your docker registry and run into your local machine
 - [ ] Do a request to your microservice
+- [ ] Do a change in the code and push it to your repository
+- [ ] Download from dockerhub the new image and test your new change
+- [ ] Do a change in tests to force failing and push to your repository
 
 ### Tips
 
