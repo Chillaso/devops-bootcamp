@@ -7,7 +7,7 @@ First of all, fork this repository, after that clone into your local machine.
 git clone https://github.com/your-user-name/github-action-test.git
 ```
 
-You'll find a java application that exponse a REST API which divides two numbers passed as parameters. Also, you'll find an example of a github action file in [here](examples/ci.yml), take a look before starting.
+You'll find a [java application](devops/src/main/java/com/nttdata/devops/controller/NumberController.java) that exponse a REST API which divides two numbers passed as parameters. Also, you'll find an example of a github action file in [here](examples/ci.yml), take a look before starting.
 
 > *Anyway, you can use your microservice or microfronted instead of the java application.*
 
