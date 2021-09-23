@@ -22,8 +22,7 @@ jobs:
     
     - name: Run unit tests
       run: | 
-        cd devops/
-        mvn test
+        mvn test -f devops/pom.xml
       
     - name: Build and push Docker image
       uses: elgohr/Publish-Docker-Github-Action@3.04
