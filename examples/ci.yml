@@ -12,34 +12,27 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-
-    - name: Setup java
+    - name: Setup java 11
       uses: actions/setup-java@v2
       with:
         distribution: 'adopt' 
         java-version: '11'
         cache: 'maven'
-    
     - name: Run unit tests
-      run: | 
-        ls
-        mvn test -f devops/pom.xml
-      
+      run: mvn test -f devops/pom.xml
     - name: Build and push Docker image
       uses: elgohr/Publish-Docker-Github-Action@3.04
       with:
-        name: chillaso/devops # Repository in dockerhub
+        name: chillaso/devops
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-
     - name: Vulnerability scan
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: 'docker.io/chillaso/devops:latest' #Image to scan, the same name as repository in dockerhub
+        image-ref: 'docker.io/chillaso/devops:latest'
         format: 'template'
         template: '@/contrib/sarif.tpl'
         output: 'trivy-results.sarif'
-
     - name: Upload Trivy scan results to GitHub Security tab
       uses: github/codeql-action/upload-sarif@v1
       with:
