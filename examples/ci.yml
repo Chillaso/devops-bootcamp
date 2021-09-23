@@ -22,6 +22,7 @@ jobs:
     
     - name: Run unit tests
       run: | 
+        cd devops/
         mvn test
       
     - name: Build and push Docker image
