@@ -14,6 +14,7 @@ You'll find a [java application](devops/src/main/java/com/nttdata/devops/control
 ## Requirements
 
 * Docker
+* Dockerhub account
 * Git 
 
 ## TODO
@@ -29,5 +30,10 @@ You'll find a [java application](devops/src/main/java/com/nttdata/devops/control
 - [ ] Download the docker image from your docker registry and run into your local machine
 - [ ] Do a request to your microservice
 
+### Tips
 
+1. You've to create a dockerhub account, then you've to create two secrets in your github repository. See [this example](examples/ci.yml)
+2. Remember to create in dockerhub the repository where you're going to upload your image, the name should be the same you've in your github action.
+3. Your github repository should be public in order to activate Github Code Scanning
+4. Remember to expose port 8080 when running your docker container
 
