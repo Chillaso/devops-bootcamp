@@ -22,11 +22,11 @@ You'll find a [java application](devops/src/main/java/com/nttdata/devops/control
 - [ ] Create a docker image for this service 
 - [ ] Create a pipeline with github action which includes:
     - [ ] Checkout the code from the repository
-    - [ ] Build the docker image
     - [ ] Run unit tests
     - [ ] Run vulnerabililty scan of your code with trivy
-    - [ ] Compile your application
-    - [ ] Print the name of the generated jar file
+    - [ ] Build the docker image
+    - [ ] Push docker image to your docker registry
+- [ ] Download the docker image from your docker registry and run into your local machine
 
 
 
