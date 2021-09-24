@@ -39,4 +39,5 @@ You'll find a [java application](devops/src/main/java/com/nttdata/devops/control
 2. Remember to create in dockerhub the repository where you're going to upload your image, the name should be the same you've in your github action.
 3. Your github repository should be public in order to activate Github Code Scanning
 4. Remember to expose port 8080 when running your docker container
+5. Good luck!
 
